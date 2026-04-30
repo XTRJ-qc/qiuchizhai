@@ -1,31 +1,123 @@
-<style>
-    /* 针对“秋池斋”特别定制的配色 */
-    :root {
-        --autumn-pool-blue: #3a506b; /* 偏冷的水墨蓝 */
-        --seal-red: #9d2933;        /* 印泥红 */
-        --paper-white: #f4f1ea;    /* 仿旧绢帛色 */
-    }
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋池斋 | 明清瓷器格物笔记</title>
+    <style>
+        :root {
+            --autumn-pool-blue: #3a506b;
+            --seal-red: #9d2933;
+            --paper-white: #f4f1ea;
+        }
 
-    .site-title {
-        font-family: "Long Cang", "STKaiti", "楷体";
-        font-size: 3.5rem;
-        color: var(--autumn-pool-blue);
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-        margin-bottom: 0.5rem;
-    }
+        body {
+            background-color: var(--paper-white);
+            color: #1a1a1a;
+            font-family: "STKaiti", "KaiTi", serif;
+            margin: 0;
+            line-height: 1.8;
+            padding: 20px;
+        }
 
-    .motto {
-        letter-spacing: 8px;
-        font-size: 0.9rem;
-        color: #777;
-        border-left: 1px solid var(--seal-red);
-        padding-left: 15px;
-        margin-left: 20px;
-        display: inline-block;
-    }
-</style>
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px double #dcdcdc;
+            margin-bottom: 40px;
+        }
+
+        .site-title {
+            font-size: 3rem;
+            color: var(--autumn-pool-blue);
+            letter-spacing: 12px;
+            margin: 0;
+        }
+
+        .motto {
+            font-size: 1.1rem;
+            color: #666;
+            letter-spacing: 4px;
+            margin-top: 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .collection-card {
+            background: #fff;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+            border-radius: 2px;
+            text-align: center;
+        }
+
+        .collection-card img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: inline-block;
+            margin-bottom: 20px;
+            border: 1px solid #f0f0f0;
+        }
+
+        .item-title {
+            font-size: 1.4rem;
+            color: var(--seal-red);
+            border-left: 4px solid var(--seal-red);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .notes {
+            color: #333;
+            text-align: justify;
+            border-top: 1px dashed #eee;
+            padding-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
 
 <header>
-    <div class="site-title">秋池斋</div>
+    <h1 class="site-title">秋池斋</h1>
     <div class="motto">格物十八载 · 静听秋池雨</div>
 </header>
+
+<div class="container">
+    
+    <div class="collection-card">
+        <div class="item-title">明清瓷器选萃 · 其一</div>
+        <img src="s-l1600-20.jpeg" alt="秋池斋藏品">
+        <div class="notes">
+            <strong>斋主笔记：</strong> 十八载寒暑，摩挲案头。此件作品釉质肥厚莹润，若凝脂，若秋水。其形之雅、色之正，每每观之，总能让人心境沉淀。
+        </div>
+    </div>
+
+    <div class="collection-card">
+        <div class="item-title">明清瓷器选萃 · 其二</div>
+        <img src="s-l1600-21.jpeg" alt="秋池斋藏品">
+        <div class="notes">
+            <strong>斋主笔记：</strong> 此器胎骨坚致，器型端稳。收藏之乐，不仅在得物，更在与古人精神之往还。
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 秋池斋 · 纯粹收藏 · 随缘交流
+</footer>
+
+</body>
+</html>
